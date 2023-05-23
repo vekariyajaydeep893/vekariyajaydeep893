@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test_form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="main-section">
+        <form id="form" name="myform" onsubmit="return validateform()" method="post">
+            <label for="Fname">First Name :</label><input type="text" name="fname" id="fname" placeholder="Enter your first name">
+            <br>
+            <label for="Lname">Last Name :</label><input type="text" name="lname" id="lname" placeholder="Enter your last name">
+            <br>
+            <label for="email">Email :</label><input type="email" name="email" id="email" placeholder="it should contain @">
+            <br>
+            <label for="number">Mobile :</label><input type="number" name="mobile" id="number" placeholder="only 10 digits are allowed">
+            <br>
+            <label for="Gender">Gender :</label><input id="radio" type="radio" name="fav_language" value="Male"> Male <input id="radio" type="radio" name="fav_language" value="Female"> Female
+            <br>
+            <label for="DOB">Date of Birth :</label><input type="date" name="date-of-birth" id="dob" value="birthday">
+            <br>
+            <label for="address">Address :</label><textarea name="address" id="text" cols="30" rows="10"></textarea>
+            <br>
+            <label for="city">City :</label><input type="text" name="city" id="city" placeholder="City">
+            <br>
+            <label for="PIN">Area PIN :</label><input type="number" id="pin" name="area-pin">
+            <br>
+            <label for="state">State :</label><input type="text" name="state" id="state">
+            <br>
+            <label for="qualification">Qualification :</label><select name="qualification" id="qualification">
+                <option value="#">Select Qualification</option>
+                <option value="12th">12th</option>
+                <option value="BCA">BCA</option>
+                <option value="computer science">Computer Science</option>
+                <option value="B-Com">B-Com</option>
+            </select>
+            <br>
+            <label for="Gender">Specialization :</label><input id="checkbox" type="checkbox" name="specialization" value="computer science"> Computer Science
+            <br>
+            <input id="checkbox-2" type="checkbox" name="information-technology" value="information technology"> Information Technology
+            <br>
+            <input id="checkbox-2" type="checkbox" name="computer-architecture" value="Computer Architecture"> Computer Architecture
+            <br>
+            <input id="checkbox-2" type="checkbox" name="tele-communication" value="Tele Communication"> Tele Communication
+            <br>
+            <label for="password">Password :</label><input type="password" id="password" name="password">
+            <br>
+            <button onclick="fun()">Registerd</button>
+        </form>
+    </section>
+</body>
+</html>
